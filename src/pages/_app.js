@@ -4,11 +4,11 @@ import lightTheme from './../components/theme/light'; // Import your light theme
 import darkTheme from './../components/theme/dark'; // Import your dark theme
 
 const App = ({ Component, pageProps }) => {
-  const [themeMode, setThemeMode] = useState('light'); // Initial theme mode is light
+  const [themeMode, setThemeMode] = useState('dark'); // Initial theme mode is light
 
   // Toggle theme mode
   const toggleThemeMode = () => {
-    setThemeMode(themeMode === 'light' ? 'dark' : 'light');
+    setThemeMode("light");
   };
 
   // Get the theme based on the current theme mode

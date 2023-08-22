@@ -15,7 +15,7 @@ const Dashboard = ({toggleThemeMode}) => {
   // Customize these props as needed
   const headerLogo = '/images/logo.png';
 
-  const introText = 'Introducing "CloudSprint" - the ultimate SaaS solution for streamlined productivity and seamless collaboration.!';
+  const introText = '"Experience the future of AI with Codainer - Where Innovation Meets Software Excellence."';
   const paymentMethods = [
     { id: 1, name: 'Credit Card' },
     { id: 2, name: 'PayPal' },

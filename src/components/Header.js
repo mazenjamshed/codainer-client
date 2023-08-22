@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Flex, Text, IconButton, useTheme, Button } from '@chakra-ui/react';
-import { FaPlay } from 'react-icons/fa';
+import { FaAddressBook, FaIdeal, FaPlay, FaRegEnvelope } from 'react-icons/fa';
 import BorderedButton from './UI/Buttons/borderedButton';
 
 const Header = ({ headerLogo, introText }) => {
@@ -10,30 +10,42 @@ const Header = ({ headerLogo, introText }) => {
     <Flex
       bg={theme.colors.background.secondary}
       color={theme.colors.text.primary}
-      borderRadius="lg"
+      // borderRadius="lg"
+      // borderTop={"1px solid #fff"}
       p={4}
       height="calc(100vh - 64px)" // Subtracting the height of the navbar (64px) from the viewport height
-      width="100vw" // Taking up the full viewport width
+      // Taking up the full viewport width
     >
-      <Box flex="1" display="flex" alignItems="center" justifyContent="center" flexDirection="column">
+      <Box flex="1" display="flex" alignItems="center" justifyContent="center" flexDirection="column" px="3rem">
         <Box mb={4}>
-          <Text>Boost Your Workflow, Unleash Collaboration" - Experience CloudSprint's Power</Text>
+          <Text>Elevate your business with cutting-edge AI solutions and SaaS products from our innovative software house.</Text>
         </Box>
         <Text
-          fontSize="4.5rem"
+          fontSize="3.5rem"
           letterSpacing="-0.1rem"
-          fontWeight="400"
-          textAlign="center"
+          fontWeight="700"
+          whiteSpace={"nowrap"}
+          // textAlign="center"
           fontFamily="favourit, Helvetica Neue, Arial, sans-serif"
         >
-          {introText}
+         Experience the future of AI with Codainer
+        </Text>
+        <Text
+          fontSize="2.5rem"
+          letterSpacing="-0.1rem"
+          fontWeight="400"
+          whiteSpace={"nowrap"}
+          // textAlign="center"
+          fontFamily="favourit, Helvetica Neue, Arial, sans-serif"
+        >
+Where Innovation Meets Software Excellence.
         </Text>
         {/* Add other introduction content */}
         <Box mt={4} display="flex" alignItems="center" justifyContent="center">
           <Box
             display="flex"
             alignItems="center"
-            borderRadius="1rem"
+            // borderRadius="1rem"
             borderWidth="2px"
             borderColor={theme.colors.text.primary}
             px={4}
@@ -52,7 +64,7 @@ const Header = ({ headerLogo, introText }) => {
           >
             <IconButton
               aria-label="Play"
-              icon={<FaPlay />}
+              icon={<FaRegEnvelope/>}
               color={theme.colors.text.primary}
               fontSize="1.5rem"
               bg="transparent"
@@ -66,10 +78,10 @@ const Header = ({ headerLogo, introText }) => {
                 color: theme.colors.background.secondary,
               }}
             >
-              See How It Works
+           Have An Idea? Ping me 
             </Text>
           </Box>
-          <BorderedButton paddingX={8} paddingY={7} text="Get Started" fontFamily={theme.fonts.body} fontSize={theme.fontSizes.md} borderRadius="1rem" marginLeft={4} />
+          <BorderedButton paddingX={8} paddingY={7} text="Get Started" fontFamily={theme.fonts.body} fontSize={theme.fontSizes.md} borderRadius="none" marginLeft={4} />
         </Box>
       </Box>
     </Flex>

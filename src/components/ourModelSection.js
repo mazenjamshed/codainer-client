@@ -40,7 +40,7 @@ const OurModelSection = () => {
             fontFamily: theme.fonts.heading,
           }}
         >
-          43 million
+         250+ 
         </Heading>
         <Text
           style={{ 
@@ -52,7 +52,7 @@ const OurModelSection = () => {
             fontFamily: theme.fonts.body,
           }}
         >
-          transactions processed
+      Happy  Clients
         </Text>
       </Box>
       <Box 
@@ -73,7 +73,7 @@ const OurModelSection = () => {
             fontFamily: theme.fonts.heading,
           }}
         >
-          $111 million
+        AI SaaS
         </Heading>
         <Text
           style={{ 
@@ -85,7 +85,7 @@ const OurModelSection = () => {
             fontFamily: theme.fonts.body,
           }}
         >
-          in taxes collected and remitted
+          in many categories
         </Text>
       </Box>
       <Box 
@@ -106,7 +106,7 @@ const OurModelSection = () => {
             fontFamily: theme.fonts.heading,
           }}
         >
-          4,000+
+         100%
         </Heading>
         <Text
           style={{ 
@@ -118,7 +118,7 @@ const OurModelSection = () => {
             fontFamily: theme.fonts.body,
           }}
         >
-          customers using Paddle
+    Executions for all Innovative Ideas
         </Text>
       </Box>
     </Box>

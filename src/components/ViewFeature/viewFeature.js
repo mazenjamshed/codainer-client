@@ -9,7 +9,7 @@ const Features = () => {
         _dark={{
           bg: theme.colors.background.secondary,
         }}
-        p={20}
+        p={40}
         w='full'
         justifyContent='center'
         alignItems='center'
@@ -17,12 +17,13 @@ const Features = () => {
       >
         <Box
           shadow='xl'
-          bg={theme.colors.background.tertiary}
+          // bg={theme.colors.background.tertiary}
+          bg="rgba(0,0,0,.4)"
           _dark={{
             bg: 'gray.800',
           }}
           px={8}
-          py={18}
+        
           borderRadius={10}
           mx='auto'
           display="flex"
@@ -31,12 +32,12 @@ const Features = () => {
           alignItems="center"
         >
           <SimpleGrid
-            alignItems='start'
+            alignItems='center'
             columns={{
               base: 1,
               md: 2,
             }}
-            mt={8}
+           
             spacingY={{
               base: 10,
               md: 32,
@@ -67,7 +68,7 @@ const Features = () => {
                   md: 'shorter',
                 }}
                 textShadow='2px 0 currentcolor'
-                mt={20}
+             
               >
                 Clear overview for efficient tracking
               </chakra.h2>
@@ -77,10 +78,11 @@ const Features = () => {
                   base: 'center',
                   sm: 'left',
                 }}
-                color={theme.colors.background.secondary}
-                _dark={{
-                  color: theme.colors.text.secondary,
-                }}
+                // color={theme.colors.background.secondary}
+                // _dark={{
+                //   color: theme.colors.text.secondary,
+                // }}
+                color={"#fff"}
                 fontSize={{
                   md: 'lg',
                 }}
@@ -89,7 +91,7 @@ const Features = () => {
                 clear overview in Dashboard. Features like the smart search option
                 allow you to quickly find any data you’re looking for.
               </chakra.p>
-              <Button
+              {/* <Button
                 w={{
                   base: 'full',
                   sm: 'auto',
@@ -109,18 +111,22 @@ const Features = () => {
                 as='a'
               >
                 Learn More
-              </Button>
+              </Button> */}
             </Box>
             <Box
               w='full'
-              h='full'
-              py={48}
-              bg={theme.colors.background.secondary}
+              py={28}
               borderRadius={10}
               _dark={{
                 bg: 'gray.700',
               }}
-            ></Box>
+            >
+
+<video controls width="100%" autoPlay={true} muted>
+            <source src="/meetmine_ai_intro.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+            </Box>
           </SimpleGrid>
           <SimpleGrid
             alignItems='center'
@@ -173,10 +179,7 @@ const Features = () => {
                   base: 'center',
                   sm: 'left',
                 }}
-                color={theme.colors.background.secondary}
-                _dark={{
-                  color: theme.colors.text.secondary,
-                }}
+                color={"#fff"}
                 fontSize={{
                   md: 'lg',
                 }}
@@ -185,38 +188,23 @@ const Features = () => {
                 our expansive yet simple API; decide how you integrate Payments
                 and build advanced and reliable products yourself from scratch.
               </chakra.p>
-              <Button
-                w={{
-                  base: 'full',
-                  sm: 'auto',
-                }}
-                size='lg'
-                bg={theme.colors.secondary}
-                _dark={{
-                  bg: 'gray.700',
-                }}
-                _hover={{
-                  bg: 'gray.700',
-                  _dark: {
-                    bg: 'gray.600',
-                  },
-                }}
-                color={theme.colors.text.primary}
-                as='a'
-              >
-                Learn More
-              </Button>
+          
             </Box>
             <Box
               w='full'
-              h='full'
-              py={48}
-              bg={theme.colors.background.secondary}
+              // py={48}
               borderRadius={10}
               _dark={{
                 bg: 'gray.700',
               }}
-            ></Box>
+            >
+
+<video controls width="100%" autoPlay={true} muted>
+            <source src="/SideKick_AI.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+            </Box>
           </SimpleGrid>
         </Box>
       </Flex>

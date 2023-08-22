@@ -10,10 +10,8 @@ import {
   useTheme,
   useToken,
 } from '@chakra-ui/react';
-import { Changa_One } from 'next/font/google';
 import PriceCard from './priceCard';
 
-const changaOne = Changa_One({ subsets: ['latin'], weight: '400' });
 
 const Pricing = () => {
   const theme = useTheme();

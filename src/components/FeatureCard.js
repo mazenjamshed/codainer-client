@@ -1,7 +1,6 @@
 import React from 'react';
 import { Box, useTheme, Flex, Wrap, WrapItem } from '@chakra-ui/react';
 import BorderedButton from './UI/Buttons/borderedButton';
-import { fonts } from 'web3uikit';
 
 const FeatureCard = ({ heading, description, features }) => {
   const theme = useTheme();
@@ -39,8 +38,8 @@ const FeatureCard = ({ heading, description, features }) => {
         {features.map((feature, index) => (
           <Box
             key={index}
-            width="32%"
-            height="350px"
+            // width="32%"
+            // height="350px"
             p={6}
             borderWidth="1px"
             borderColor={theme.colors.text.primary}

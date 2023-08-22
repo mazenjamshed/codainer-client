@@ -37,7 +37,7 @@ const BorderedButton = ({ text, paddingX, paddingY, fontSize, borderRadius, dark
       alignItems="center" // Center the text vertically
       justifyContent="center" // Center the text horizontally
     >
-      {text}
+    Explore More
     </Button>
   );
 };

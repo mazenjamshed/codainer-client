@@ -42,13 +42,13 @@ const Section = () => {
 
   return (
     <Box
-      height="50vh"
+      // height="50vh"
       backgroundColor={theme.colors.background.primary}
       display="flex"
       justifyContent="center"
       alignItems="center"
     >
-      <Flex justifyContent="space-between" height="30vh">
+      <Flex justifyContent="space-between" >
         <Box
           flex="1"
           borderWidth="1px"
@@ -68,6 +68,7 @@ const Section = () => {
           flexDirection="column"
           alignItems="flex-start"
           justifyContent="flex-start"
+          pb="2rem"
         >
           <h3
             style={{

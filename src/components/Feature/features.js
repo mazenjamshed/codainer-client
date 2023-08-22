@@ -17,11 +17,7 @@ const Features = () => {
       description: 'However and wherever you sell, Paddle ensures you get as much revenue as possible. We route between multiple payment partners, cover 100% of sales tax compliance and protect you against fraud',
       buttons: ['Custom checkout', 'B2B invoicing', 'Subscription billing'],
     },
-    {
-      heading: 'Understand',
-      description: 'With all your revenue coming through Paddle, across every bank, region and channel, we act as your single source of truth. So whether you run your reports through Paddle or connect to another tool, your data is always reliable.',
-      buttons: ['Custom checkout', 'B2B invoicing', 'Subscription billing'],
-    },
+
   ];
 
   const newCardButtons = ['Custom checkout', 'B2B invoicing', 'Subscription billing', 'Custom checkout', 'B2B invoicing', 'Subscription billing'];
@@ -35,7 +31,8 @@ const Features = () => {
       flexDirection="column"
       alignContent="center"
       alignItems="center"
-      height="110vh"
+      pb="7rem"
+      // height="110vh"
     >
       <FeatureCard
         heading="Features"
@@ -45,7 +42,7 @@ const Features = () => {
       {/* New Card */}
       <Box
         width="90%"
-        height="220px"
+        // height="220px"
         p={4}
         borderWidth="1px"
         borderColor={theme.colors.text.primary}
@@ -60,7 +57,7 @@ const Features = () => {
         }}
         mt={8}
       >
-        <Flex justifyContent="space-between" mt={1}>
+        <Flex justifyContent="space-between" mt={1} flexDir={"column"} px="1rem">
           <Box>
             <h3 
               style={{ 
@@ -92,10 +89,10 @@ const Features = () => {
               Scaling a SaaS business takes more than technology. Customers need specialist support; you need advice on pricing and go-to-market strategies; and you want to seamlessly migrate subscription agreements.
             </p>
           </Box>
-          <Flex justifyContent="center" alignItems="center">
-            <Wrap spacing={2}>
+          <Flex justifyContent="left" alignItems="center" py="2rem">
+            <Flex gap={6}>
               {newCardButtons.map((button, buttonIndex) => (
-                <WrapItem key={buttonIndex}>
+                <Wrap key={buttonIndex}>
                   <BorderedButton
                     paddingX={4}
                     paddingY={5}
@@ -107,9 +104,9 @@ const Features = () => {
                     marginLeft={0}
                     borderRadius="100px"
                   />
-                </WrapItem>
+                </Wrap>
               ))}
-            </Wrap>
+            </Flex>
           </Flex>
         </Flex>
       </Box>
