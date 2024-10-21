@@ -14,6 +14,7 @@ import {
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { siteConfig } from "../../utils/site-config";
 import FooterSignup from "./footerSignup";
+import { useRouter } from "next/router";
 
 export const ExternalSocialLink = (props) => {
   const theme = useTheme();
@@ -23,6 +24,9 @@ export const ExternalSocialLink = (props) => {
   const handleHover = () => {
     setIsHovered(!isHovered);
   };
+
+
+
 
   return (
     <IconButton
@@ -44,13 +48,14 @@ export const ExternalSocialLink = (props) => {
 
 const Footer = () => {
   const theme = useTheme();
+  const router = useRouter()
 
   return (
     <Box
       bg={theme.colors.background.secondary} // Use theme.colors.background.secondary for the background color
       color={theme.colors.text.primary} // Use theme.colors.text.primary for the text color
       py={{ base: 5, md: 10 }}
-      
+
     >
       <Box ml="3.5rem">
         <Flex alignItems="center">
@@ -77,6 +82,23 @@ const Footer = () => {
             />
           </Flex>
         </Flex>
+        <Box display={["none", "none", "block", "block"]}>
+          <Text
+            as="span"
+            _focus={{ outline: "none", boxShadow: "none" }}
+            fontWeight={theme.fontWeights.medium}
+            color={theme.colors.text.primary}
+            cursor="pointer"
+            _hover={{
+              color: theme.colors.gray[600],
+              textDecoration: "none",
+            }}
+
+            onClick={() => router?.push("/privacyPolicy")}
+          >
+            Privacy Policy
+          </Text>
+        </Box>
         <Box display={["none", "none", "block", "block"]}>
           <Image src={"/logo.svg"} alt="Logo" width={16} height={16} />
         </Box>

@@ -77,11 +77,11 @@ const SignInForm = () => {
           }}
           color={theme.colors.background.primary}
           as='a'
-         >
+        >
           Sign In
         </Button>
         <Text mt={4} color={textColor}>
-          Don't have an account? <chakra.span color={theme.colors.accent}>Sign Up</chakra.span>
+          Don&apos;t have an account? <chakra.span color={theme.colors.accent}>Sign Up</chakra.span>
         </Text>
       </Box>
     </chakra.form>
